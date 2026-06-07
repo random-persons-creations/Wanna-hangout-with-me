@@ -1,0 +1,62 @@
+body {
+    background: linear-gradient(135deg,#d1baf6,#a9cae7);
+}
+header {
+    padding: 75px;
+    background: linear-gradient(135deg,#ffb2c9,#c7b6f7,#9dc9f2);
+    text-align: center;
+    font-size: 50px;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 10px;
+    font-family: garamond;
+}
+button {
+    background: rgb(246, 16, 16);
+    border-radius: 8px;
+    padding: 20px 22px;
+    margin: 10px;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+}
+.button2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.6);
+}
+h1 {
+  text-shadow: 2px 2px 5px rgb(228, 35, 83);
+}
+.button1 {background-color: #14fd2f;} 
+#noBtn  {
+    position: absolute;
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+#yesBtn  {
+    transition: 0.2s ease;
+}
+
+@keyframes pop  {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1.2); }
+}
+@keyframes floatUp {
+    0% { 
+        opacity: 1;
+        transform: translateY(0); 
+    }
+    100% { 
+        opacity: 0;
+        transform: translateY(-80px); 
+    }
+}
+.heart {
+   position: fixed;
+   font-size: 24px;
+   animation: floatUp 1s ease-out forwards;
+   pointer-events: none;
+   z-index: 9999;
+}
