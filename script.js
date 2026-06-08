@@ -3,10 +3,6 @@ function myFunction() {
   document.getElementById("demo2").innerHTML = "Wanna go to the movies🎟🍿";
 }
 
- setTimeout(() => {
-        document.getElementById("demo1").textContent =
-        "When are you available?";
-    }, 1000);
 
 const noBtn = document.getElementById("noBtn");
 const message = document.getElementById("message");
@@ -39,6 +35,11 @@ const yesBtn = document.getElementById("yesBtn");
 
 yesBtn.addEventListener("click", () => {
     message.textContent = "Wanna go to the arcades🕹";
+  
+ setTimeout(() => {
+        document.getElementById("demo1").textContent =
+        "When are you available?";
+    }, 1000);
 
     // button animation
     yesBtn.style.animation = "pop 0.3s ease forwards";
