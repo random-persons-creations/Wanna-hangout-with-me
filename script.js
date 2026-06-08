@@ -1,6 +1,6 @@
 function myFunction() {
   document.getElementById("demo1").innerHTML = "Yay";
-  document.getElementById("demo2").innerHTML = "Wanna go to the movies🎟🍿";
+  document.getElementById("demo2").innerHTML = "Wanna go to the arcade🕹";
 }
 
 const noBtn = document.getElementById("noBtn");
@@ -37,7 +37,7 @@ yesBtn.addEventListener("click", () => {
     
     setTimeout(() => {
         document.getElementById("demo1").textContent =
-        "When are you available?";
+        "Nice😃 when are you free";
     }, 1000);
 
     // button animation
