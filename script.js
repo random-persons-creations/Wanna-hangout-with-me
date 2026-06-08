@@ -33,7 +33,7 @@ noBtn.addEventListener("click", moveButton);
 const yesBtn = document.getElementById("yesBtn");
 
 yesBtn.addEventListener("click", () => {
-    message.textContent = "Wanna go to the arcades🕹"
+    message.textContent = "Wanna go to the arcade🕹"
     
     setTimeout(() => {
         document.getElementById("demo1").textContent =
