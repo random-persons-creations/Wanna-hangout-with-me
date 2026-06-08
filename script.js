@@ -3,7 +3,6 @@ function myFunction() {
   document.getElementById("demo2").innerHTML = "Wanna go to the movies🎟🍿";
 }
 
-
 const noBtn = document.getElementById("noBtn");
 const message = document.getElementById("message");
 
@@ -34,9 +33,9 @@ noBtn.addEventListener("click", moveButton);
 const yesBtn = document.getElementById("yesBtn");
 
 yesBtn.addEventListener("click", () => {
-    message.textContent = "Wanna go to the arcades🕹";
-  
- setTimeout(() => {
+    message.textContent = "Wanna go to the arcades🕹"
+    
+    setTimeout(() => {
         document.getElementById("demo1").textContent =
         "When are you available?";
     }, 1000);
