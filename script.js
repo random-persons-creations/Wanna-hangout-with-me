@@ -3,6 +3,11 @@ function myFunction() {
   document.getElementById("demo2").innerHTML = "Wanna go to the movies🎟🍿";
 }
 
+ setTimeout(() => {
+        document.getElementById("demo1").textContent =
+        "When are you available?";
+    }, 1000);
+
 const noBtn = document.getElementById("noBtn");
 const message = document.getElementById("message");
 
